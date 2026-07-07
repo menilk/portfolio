@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const projects = [
   {
     title: "Personal Portfolio Website",
@@ -40,10 +44,14 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
 
           {projects.map((project) => (
-            <div
+            <motion.div
               key={project.title}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
               className="bg-slate-900 rounded-xl p-8 shadow-lg hover:-translate-y-2 transition"
-            >
+             >
 
               <h3 className="text-2xl font-bold mb-4 text-blue-400">
                 {project.title}
@@ -72,7 +80,7 @@ export default function Projects() {
                 View GitHub →
               </a>
 
-            </div>
+            </motion.div>
           ))}
 
         </div>
