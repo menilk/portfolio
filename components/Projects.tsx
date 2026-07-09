@@ -20,9 +20,11 @@ const projects = [
     description:
       "A web-based campus navigation system designed to help students and visitors find buildings, rooms, and locations inside Debre Tabor University.",
     technologies: [
+      "HTML",
+      "CSS",
       "JavaScript",
-      "React",
-      "Maps API",
+      "Leaflet",
+      "OpenStreetMap",
       "MySQL",
     ],
     github: "https://github.com/menilk/dtu-campus-navigation",
