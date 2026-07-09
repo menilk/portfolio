@@ -25,7 +25,7 @@ const projects = [
       "Maps API",
       "MySQL",
     ],
-    github: "#",
+    github: "https://github.com/menilk/portfolio",
   },
 ];
 
