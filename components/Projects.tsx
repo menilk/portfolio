@@ -25,7 +25,7 @@ const projects = [
       "Maps API",
       "MySQL",
     ],
-    github: "https://github.com/menilk/portfolio",
+    github: "https://github.com/menilk/dtu-campus-navigation",
   },
 ];
 
