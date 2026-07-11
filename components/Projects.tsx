@@ -74,14 +74,20 @@ export default function Projects() {
                 ))}
               </div>
 
-              <a
+              <div className="space-y-2">
+               <p className="text-xs text-yellow-400 break-all">
+                 {project.github}
+               </p>
+
+               <a
                 href={project.github}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-400 hover:underline"
-              >
-                View GitHub →
-              </a>
-
+                >
+                 View GitHub →
+               </a>
+              </div>
             </motion.div>
           ))}
 
